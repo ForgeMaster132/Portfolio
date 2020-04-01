@@ -1,0 +1,58 @@
+html, body {
+height: 100%;
+margin: 0%;
+padding: 0%;
+}
+
+#container {
+    position: absolute;
+    background-color: lightskyblue;
+    height: 100%;
+    width: 100%;
+    margin: 0%; 
+    padding: 0%;
+}
+
+.number {
+    background-color: lightgoldenrodyellow;
+    font-size: 200%;
+}
+
+.operator {
+    background-color: lightgoldenrodyellow;
+    font-size: 200%;
+}
+
+#btns {
+    text-align: center;
+    padding: 1%;
+    position: relative;
+    top: 10%;
+    left: 35%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 50%;
+    width: 30%;
+}
+
+#clear {
+    font-size: 130%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#display {
+    position: relative;
+    top: 13%;
+    left: 35%;
+    height: 10%;
+    width: 29%;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 25%;
+    background-color: lightgoldenrodyellow;
+    padding: 0px;
+    margin: 1%;
+    text-align: center;
+    font-size: 300%;
+}

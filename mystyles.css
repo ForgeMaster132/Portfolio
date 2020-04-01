@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(100, 100, 100);
+}
+
+#aboutMe {
+    position: relative;
+    left: 13%;
+    background-color:rgb(98, 209, 124);
+    opacity: 0.8;
+    border-radius: 10px;
+    border: solid black 3px;
+    width: 65%;
+}
+
+#picMe {
+    float: left;
+    margin-left: 4px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+    border-radius: 30px;
+    border: solid black 3px;
+}
+
+#bio{
+    margin: 3px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#aboutMeHeading{
+    position: relative;
+    left: 4%;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#skills {
+    padding: 5px;
+    background-color:rgb(98, 209, 124);
+    opacity: 0.8;
+    border-radius: 10px;
+    border: solid black 3px;
+    height: 52%;
+    position: absolute;
+    top: 10px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#skillHeading {
+    position: relative;
+    left: 15%;
+}
+
+#javaScriptProjects {
+    padding: 8px;
+    background-color:rgb(98, 209, 124);
+    opacity: 0.8;
+    border-radius: 10px;
+    border: solid black 3px;
+    position: absolute;
+    top: 128%;
+    left: 2%;
+    width: 95%;
+}
+
+#javaScriptHeading {
+    position: absolute;
+    left: 35%;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+iframe {
+    border-radius: 10px;
+    border: solid black 3px;
+    position: relative;
+    left: 3%;
+}
+
+#contact {
+    padding: 2px;
+    background-color:rgb(98, 209, 124);
+    opacity: 0.8;
+    border-radius: 10px;
+    border: solid black 3px;
+    position: absolute;
+    top: 57%;
+    height: 18%;
+    font-size: 16px;
+}
+
+#education {
+    padding: 2px;
+    background-color:rgb(98, 209, 124);
+    opacity: 0.8;
+    border-radius: 10px;
+    border: solid black 3px;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    width: 16%;
+    height: 72%;
+}
+
+#educationHeading {
+    position: relative;
+    left: 20%;
+    font-size: 20px;
+}
+
+#educationP {
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#projects {
+    padding: 2px;
+    background-color:rgb(98, 209, 124);
+    opacity: 0.8;
+    border-radius: 10px;
+    border: solid black 3px;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    width: 90%;
+}
+
+#projectsP {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#projectsHeading {
+    position: absolute;
+    left: 40%;
+}

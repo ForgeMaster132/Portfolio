@@ -1,0 +1,53 @@
+#btns{
+    position: absolute;
+    margin: 0px;
+    top: 30%;
+    left: 30%;
+    block-size: 50%;
+    border: none;
+}
+button:focus {outline:0;}
+
+#rock{
+    background-image: url(Images/rock.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    border: none;
+    width: 200px;
+    height: 200px;
+  }
+
+  #paper{
+    background-image: url(Images/paper.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    border: none;
+    width: 200px;
+    height: 200px;
+  }
+
+  #scissors{
+    background-image: url(Images/scissors.jpg);
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    background-size: 200px 200px;
+    border: none;
+    width: 200px;
+    height: 200px;
+  }
+button span {
+    display: none;
+  }
+
+  #score {
+      position: absolute;
+      top: 0%;
+      left: 42%;
+  }
+
+  #round {
+      position: absolute;
+      top: 80%;
+      left: 30%;
+  }

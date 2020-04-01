@@ -1,0 +1,133 @@
+
+body {
+    background-color: lightskyblue;
+}
+
+#clock {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 35%;
+    height: 50%;
+    background-color:rgb(50,150,100);
+}
+
+i {
+    border: solid black;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 8px;
+}
+
+.up-arrow {
+    transform: rotate(-135deg);
+    position: inherit;
+    left: 5%;
+    top: 50%;
+}
+
+.down-arrow {
+    transform: rotate(45deg);
+    position: inherit;
+    left: 83%;
+    top: 45%;
+}
+
+#clock-name {
+    position: absolute;
+    left: 18%;
+    font-size: 250%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.setting-block {
+    width: 35%;
+    height: 25%;
+    padding: 5px;
+    background-color: lightgreen;
+}
+
+#break {
+    position: inherit;
+    left: 55%;
+    top: 18%;
+}
+
+#session {
+    position: inherit;
+    left: 8%;
+    top: 18%;
+}
+
+#set-session-heading {
+    position: inherit;
+    text-align: center;
+    top: -15%;
+    left: 22%;
+}
+
+#set-break-heading {
+    position: inherit;
+    text-align: center;
+    top: -15%;
+    left: 28%;
+}
+
+.set-number {
+    position: relative;
+    text-align: center;
+    top: 10%;
+}
+
+#time {
+    position: inherit;
+    top: 15%;
+    left: 32%;
+    font-size: 400%;
+}
+
+#session-break {
+    position: inherit;
+    top: -5%;
+    left: 35%;
+    font-size: 250%;
+}
+
+#display {
+    position: inherit;
+    background-color: lightgreen;
+    width: 84%;
+    left: 8%;
+    top: 53%;
+    height: 40%;
+}
+
+.button {
+    height: 25%;
+    width: 10%;
+}
+
+#play {
+    position: inherit;
+    left: 10%;
+    top: 5%;
+}
+
+#refresh {
+    position: inherit;
+    right: 10%;
+    top: 5%;
+}
+
+#pause {
+    position: inherit;
+    top: 70%;
+    left: 10%;
+}
+
+#stop {
+    position: inherit;
+    top: 70%;
+    right: 10%;
+}

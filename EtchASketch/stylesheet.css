@@ -1,0 +1,53 @@
+#grid {
+    background-color: lightgrey;
+    display: grid;
+    position: absolute;
+    padding: 0px;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    margin: 0px;
+    height: 500px;
+    width: 500px;
+    left: 35%;
+    top: 15%;
+}
+
+.gridBlock{
+    border: 0px;
+    padding: 0px;
+}
+
+.gridBlockOn {
+    background-color: black;
+    border: 0px;
+    padding: 0px;
+}
+
+#btns{
+    position: absolute;
+    top: 5%;
+    left: 48%;
+}
+
+body {
+    background-color: lightgreen;
+}
+.draw {
+    position: absolute;
+    font-size: 800%;
+    top: 10%;
+    text-orientation: sideways;
+    writing-mode: vertical-rl;
+    left: 5%;
+}
+
+#left {
+    top: 10%;
+    left: 5%;
+}
+
+#right {
+    top: 10%;
+    right: 3%;
+}
