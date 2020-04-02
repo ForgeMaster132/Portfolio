@@ -2,14 +2,15 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="mystyles.css">
+    <meta name="viewport" content="width=700px, initial-scale=1">
     <title> Dayle Klinkhamer - Software Engineer </title>
 </head>
 <body>
-    <div>
-    <div id="aboutMe"> 
+    <div class="container-fluid">
+    <div id="aboutMe" class="col-lg"> 
         <h1 id="aboutMeHeading">About me - Dayle Klinkhamer</h1>
         <p id="bio"> 
-            <img id="picMe" alt="Picture of Me" src="Images\Me.jpg"/>
+            <img id="picMe" alt="Picture of Me" src="images\Me.jpg"/>
             Hi, my name is Dayle Klinkhamer. I am an aspiring Software Engineer,looking to use my skills in tech to really
             make a difference. I have been using a computer since I can remember and technology has always been a major focus for me.
             I took an interest early on into learning all different things I could do on a computer.I have been self taught all the
@@ -22,30 +23,37 @@
             in a way that allows me to keep many things in mind at once.
         </p>  
     </div>
-        <div id="skills">
+        <div id="skills" class="col-sm">
             <h2 id="skillHeading"> Skills</h2>
-            <h4>Languages</h4>
-            <ul>
+            <h4 id="">Languages</h4>
+            <ul id="langList">
                 <li>Java</li>
                 <li>Python</li>
                 <li>SQL</li>
                 <li>JavaScript</li>
                 <li>C</li>
             </ul>
-            <h4>Other</h4>
-            <ul>
+            <h4 id="otherHeading">Other</h4>
+            <ul id="otherList">
                 <li>JUnit Testing</li>
                 <li>JavaDoc</li>
                 <li>People Person</li>
                 <li>Microsoft Excel</li>
             </ul>
         </div>
-        <div id="contact">
+        <div id="contact" class="col-sm">
         <h2> Contact Details</h2>
         <h5>083 743 7744<br>
             dayleklinkhamer@gmail.com<br>
             <a target="_blank" href="https://github.com/ForgeMaster132?tab=repositories">Link to my Github Account</a><br>
             LinkedIn: <a target = "_blank" href="https://www.linkedin.com/in/dayle-klinkhamer-1b24011a2/">Dayle Klinkhamer</a></h5>
+        </div>
+        <div id="education" class="col-md">
+            <h3 id="educationHeading">Education</h3>
+            <p id="educationP"> I finished matric top of my school, however I never enjoyed school. I love learning but school never felt like it was condusive
+                to learning for me so traditional further schooling was not for me. I decided to follow my passion for tech by going to the weThinkCode
+                coding bootcamp and later the HyperionDev Software Engineering bootcamp. I also did alot of self teaching between these two bootcamps. 
+            </p>
         </div>
             <div id="projects">
                 <h2 id="projectsHeading">Projects I have done</h2>
@@ -65,17 +73,10 @@
                 </p>
             </div>
             <div id="javaScriptProjects">
-                <h1 id="javaScriptHeading"> Fun with Javascript</h1>
+                <h1 id="javaScriptHeading"> Fun with Javascript - Desktop Preferred</h1>
                 <iframe src="Calculator\index.html" height="700" width="1400"></iframe>
                 <iframe src="EtchASketch\index.html" height="700" width="1400"></iframe>
                 <iframe src="PomodoroClock\index.html" height="700" width="1400"></iframe>
             </div>
-    <div id="education">
-        <h3 id="educationHeading">Education</h3>
-        <p id="educationP"> I finished matric top of my school, however I never enjoyed school. I love learning but school never felt like it was condusive
-            to learning for me so traditional further schooling was not for me. I decided to follow my passion for tech by going to the weThinkCode
-            coding bootcamp and later the HyperionDev Software Engineering bootcamp. I also did alot of self teaching between these two bootcamps. 
-        </p>
-    </div>
     </div>
 </body>

@@ -3,71 +3,75 @@ body {
 }
 
 #aboutMe {
-    position: relative;
-    left: 13%;
-    background-color:rgb(98, 209, 124);
+    position: absolute;
+    top: 0.5vw;
+    left: 15vw;
+    background-color:rgb(147, 173, 144);
     opacity: 0.8;
     border-radius: 10px;
     border: solid black 3px;
-    width: 65%;
+    width: 70vw;
 }
 
 #picMe {
     float: left;
     margin-left: 4px;
     margin-right: 8px;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
     border-radius: 30px;
     border: solid black 3px;
+    height: 25vw;
+    width: 15vw;
 }
 
 #bio{
     margin: 3px;
-    font-size: 25px;
+    font-size: 1.6vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #aboutMeHeading{
     position: relative;
-    left: 4%;
-    font-size: 35px;
+    left: 1vw;
+    font-size: 3vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #skills {
     padding: 5px;
-    background-color:rgb(98, 209, 124);
+    background-color:rgb(147, 173, 144);
     opacity: 0.8;
     border-radius: 10px;
     border: solid black 3px;
-    height: 52%;
+    height: 24vw;
+    width: 11vw;
     position: absolute;
-    top: 10px;
-    font-size: 18px;
+    top: 0.5vw;
+    left: 1vw;
+    font-size: 1vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #skillHeading {
     position: relative;
-    left: 15%;
+    left: 0.5vw;
+    font-size: 2vw;
 }
 
 #javaScriptProjects {
     padding: 8px;
-    background-color:rgb(98, 209, 124);
+    background-color:rgb(147, 173, 144);
     opacity: 0.8;
     border-radius: 10px;
     border: solid black 3px;
     position: absolute;
-    top: 128%;
-    left: 2%;
-    width: 95%;
+    top: 70vw;
+    left: 2vw;
+    width: 94vw;
 }
 
 #javaScriptHeading {
-    position: absolute;
-    left: 35%;
-    font-size: 40px;
+    font-size: 2vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -75,63 +79,67 @@ iframe {
     border-radius: 10px;
     border: solid black 3px;
     position: relative;
-    left: 3%;
+    left: 2vw;
+    width: 90vw;
 }
 
 #contact {
     padding: 2px;
-    background-color:rgb(98, 209, 124);
+    background-color:rgb(147, 173, 144);
     opacity: 0.8;
     border-radius: 10px;
     border: solid black 3px;
     position: absolute;
-    top: 57%;
-    height: 18%;
-    font-size: 16px;
+    top: 27.5vw;
+    left: 1vw;
+    height: 10vw;
+    width: 11vw;
+    font-size: 1vw;
 }
 
 #education {
     padding: 2px;
-    background-color:rgb(98, 209, 124);
+    background-color:rgb(147, 173, 144);
     opacity: 0.8;
     border-radius: 10px;
     border: solid black 3px;
     position: absolute;
-    top: 10px;
-    right: 50px;
-    width: 16%;
-    height: 72%;
+    top: 0.5vw;
+    right: 1vw;
+    width: 10vw;
+    height: 36vw;
 }
 
 #educationHeading {
     position: relative;
-    left: 20%;
-    font-size: 20px;
+    left: 0.5vw;
+    font-size: 1.5vw;
 }
 
 #educationP {
-    font-size: 23px;
+    font-size: 1.1vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #projects {
     padding: 2px;
-    background-color:rgb(98, 209, 124);
+    background-color:rgb(147, 173, 144);
     opacity: 0.8;
     border-radius: 10px;
     border: solid black 3px;
     position: absolute;
-    top: 80%;
+    top: 42vw;
     left: 5%;
     width: 90%;
 }
 
 #projectsP {
-    font-size: 20px;
+    font-size: 1.5vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #projectsHeading {
     position: absolute;
-    left: 40%;
+    left: 35vw;
+    font-size: 2vw;
 }
