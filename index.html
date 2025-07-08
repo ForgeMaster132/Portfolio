@@ -1,82 +1,164 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="mystyles.css">
-    <meta name="viewport" content="width=700px, initial-scale=1">
-    <title> Dayle Klinkhamer - Software Engineer </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dayle Klinkhamer - Software Engineer</title>
+  <style>
+    :root {
+      --primary: #1e293b;
+      --secondary: #334155;
+      --accent: #4ade80;
+      --bg: #f1f5f9;
+      --text: #0f172a;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    img {
+      width: 150px;
+      border-radius: 50%;
+      float: left;
+      margin-right: 1rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    .skills, .contact, .education, .projects {
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    @media(min-width: 768px) {
+      .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .skills, .contact, .education {
+        flex: 1;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container-fluid">
-    <div id="aboutMe" class="col-lg"> 
-        <h1 id="aboutMeHeading">About me - Dayle Klinkhamer</h1>
-        <p id="bio"> 
-            <img id="picMe" alt="Picture of Me" src="me.JPG"/>
-            Hi, my name is Dayle Klinkhamer. I am an aspiring Software Engineer,looking to use my skills in tech to really
-            make a difference. I have been using a computer since I can remember and technology has always been a major focus for me.
-            I took an interest early on into learning all different things I could do on a computer.I have been self taught all the
-            way, teaching myself how to set up servers for games I played growing up and learning whatever else was neccesary to do the
-            things I wanted to do. Learning new things has never been an obstacle for me but rather it is something I enjoy doing. 
-            I love learning so much, I actually consider it to be a hobby of mine. As long as I live I will continue to learn, constantly
-            on the hunt for new documentaries to watch and new topics to master. One of my favourite topics would have to be history.
-            I think video games, despite their poor reputation which is thankfully changing, have a lot to teach people, I for one feel
-            I learnt alot of skills from video games such as problem solving, logical and critical thinking and the ability to multi task
-            in a way that allows me to keep many things in mind at once.
-        </p>  
-    </div>
-        <div id="skills" class="col-sm">
-            <h2 id="skillHeading"> Skills</h2>
-            <h4 id="">Languages</h4>
-            <ul id="langList">
-                <li>Java</li>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>JavaScript</li>
-                <li>C</li>
-            </ul>
-            <h4 id="otherHeading">Other</h4>
-            <ul id="otherList">
-                <li>JUnit Testing</li>
-                <li>JavaDoc</li>
-                <li>Git</li>
-                <li>Microsoft Excel</li>
-            </ul>
-        </div>
-        <div id="contact" class="col-sm">
-        <h2> Contact Details</h2>
-        <h5>083 743 7744<br>
-            dayleklinkhamer@gmail.com<br>
-            <a target="_blank" href="https://github.com/ForgeMaster132?tab=repositories">Link to my Github Account</a><br>
-            LinkedIn: <a target = "_blank" href="https://www.linkedin.com/in/dayle-klinkhamer-1b24011a2/">Dayle Klinkhamer</a></h5>
-        </div>
-        <div id="education" class="col-md">
-            <h3 id="educationHeading">Education</h3>
-            <p id="educationP"> I finished matric top of my school, however I never enjoyed school. I love learning but school never felt like it was conducive
-                to learning for me so traditional further schooling was not for me. I decided to follow my passion for tech by going to the weThinkCode
-                coding bootcamp and later the HyperionDev Software Engineering bootcamp. I also did alot of self teaching between these two bootcamps. 
-            </p>
-        </div>
-            <div id="projects">
-                <h2 id="projectsHeading">Projects I have done</h2>
-                <p id="projectsP"><br><br> Made a Construction Project Management System with a MySQL Database in Java for a HyperionDev Project.
-                    It has two menus, one related to all projects, eg adding projects, adding project architects and contractors
-                    and displaying them. The other menu is for a selected project, allowing you to edit details about it. It does
-                    all this through a MySQL database server.<br>
-                <br>
-                Made a Task Management System in Python very similar to the Construction Managment Project in java<br>
-                <br>
-                Made a basic game with pygame in Python where you play as a Pac-Man character trying to collect fruit
-                while avoiding the ghost enemies.<br>
-                <br>
-                Made a Financial Calculator in Python that allows you to choose from two different calculators,
-                one will work out a monthly bond repayment and the other will work out the interest earned from
-                a bank account.
-                </p>
-            </div>
-            <div id="javaScriptProjects">
-                <h1 id="javaScriptHeading"> Fun with Javascript - Desktop Preferred</h1>
-                <iframe src="Calculator\index.html" height="700" width="1400"></iframe>
-                <iframe src="EtchASketch\index.html" height="700" width="1400"></iframe>
-                <iframe src="PomodoroClock\index.html" height="700" width="1400"></iframe>
-            </div>
-    </div>
+  <header>
+    <h1>Dayle Klinkhamer</h1>
+    <p>Software Engineer | Dallas, TX</p>
+    <p>Email: dayleklinkhamer@gmail.com | Phone: 214 518 3823</p>
+    <p><a href="https://github.com/ForgeMaster132" target="_blank">GitHub</a> |
+         <a href="https://www.linkedin.com/in/dayle-klinkhamer-1b24011a2/" target="_blank">LinkedIn</a>
+        </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <img src="me.JPG" alt="Dayle Klinkhamer" />
+      <p>Hi, I’m Dayle. I’ve been fascinated with computers since childhood, teaching myself to run game servers and solve technical challenges just for fun. My passion for technology led me into software engineering, where I thrive on learning, solving problems, and building things that make life better. I'm also a history nerd, documentary addict, and avid gamer who believes games have taught me valuable skills like logic, multitasking, and adaptability.</p>
+    </section>
+
+    <div class="info-grid">
+      <section class="skills">
+  <h2>Skills</h2>
+
+<h4>Programming Languages</h4>
+<p>Java, Python, JavaScript, PHP, SQL, Bash</p>
+
+<h4>Frameworks & Libraries</h4>
+<p>Spring Boot, JUnit, Mockito, React, Node.js</p>
+
+<h4>Tools & DevOps</h4>
+<p>Apache Maven, Apache Tomcat, Jenkins, Docker, Git, Mercurial, Jira</p>
+
+<h4>Web & API Technologies</h4>
+<p>REST & SOAP APIs, JSON, XML, HTML/CSS</p>
+
+<h4>Databases</h4>
+<p>DB2, MySQL</p>
+
+<h4>Productivity & Office</h4>
+<p>Microsoft Office</p>
+
+</section>
+
+<section class="workExperience">
+  <h2>Professional Experience</h2>
+
+  <div class="job">
+    <h3>Java Developer</h3>
+    <p><strong>RedPanda Software</strong> (Flooid retail projects), South Africa</p>
+    <p><em>Aug 2021 – Oct 2024</em></p>
+    <ul>
+      <li>Maintained and enhanced retail solutions for clients including Calvin Klein, Tommy Hilfiger, Pick n Pay, and Woolworths.</li>
+      <li>Promoted from Junior to Intermediate Developer within one year.</li>
+      <li>Led a full redesign and rollout of the Self-Checkout system across multiple retail chains.</li>
+      <li>Integrated third-party payment systems via REST and SOAP APIs.</li>
+      <li>Created internal tools and automated processes to eliminate bottlenecks and improve productivity.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Coding Mentor</h3>
+    <p><strong>HyperionDev</strong>, South Africa</p>
+    <p><em>Jul 2020 – Jul 2021</em></p>
+    <ul>
+      <li>Mentored and graded 60+ students in full-stack software development.</li>
+      <li>Delivered lectures on software engineering principles and best practices.</li>
+      <li>Developed personalized learning strategies, improving student completion rates.</li>
+      <li>Selected for the role due to top performance in HyperionDev's coding bootcamp.</li>
+    </ul>
+  </div>
+</section>
+  </main>
 </body>
+
+</html>
