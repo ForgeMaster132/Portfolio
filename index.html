@@ -1,172 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dayle Klinkhamer - Software Engineer</title>
-  <style>
-    :root {
-      --primary: #1e293b;
-      --secondary: #334155;
-      --accent: #4ade80;
-      --bg: #f1f5f9;
-      --text: #0f172a;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: var(--primary);
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    main {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      padding: 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    section {
-      background-color: white;
-      padding: 1.5rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      margin-top: 0;
-      color: var(--primary);
-    }
-
-    img {
-      width: 150px;
-      border-radius: 50%;
-      float: left;
-      margin-right: 1rem;
-    }
-
-    ul {
-      padding-left: 1.25rem;
-    }
-
-    .skills, .contact, .education, .projects {
-      display: flex;
-      flex-direction: column;
-    }
-
-    a {
-      color: var(--accent);
-    }
-
-    @media(min-width: 768px) {
-      .info-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-      }
-
-      .skills, .contact, .education {
-        flex: 1;
-      }
-    }
-  </style>
+  <title>Dayle Klinkhamer — Software Developer</title>
+  <meta name="description" content="Dayle Klinkhamer — Software Developer. Full‑stack Java + JS. Dallas-based. Retail systems, APIs, automation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
 </head>
-
 <body>
-  <header>
-    <h1>Dayle Klinkhamer</h1>
-    <p>Software Engineer | Dallas, TX</p>
-    <p>Email: dayleklinkhamer@gmail.com | Phone: 214 518 3823</p>
-    <p><a href="https://github.com/ForgeMaster132" target="_blank">GitHub</a> |
-         <a href="https://www.linkedin.com/in/dayle-klinkhamer-1b24011a2/" target="_blank">LinkedIn</a>|
-         <a href="https://clickerkids.fun/" target="_blank">Clicker Game Project</a>
-        </p>
+  <canvas id="bg"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <span class="logo">DK</span>
+      <span class="brand-text">Dayle Klinkhamer</span>
+    </a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="ghost" aria-label="Toggle theme">☾</button>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <img src="me.JPG" alt="Dayle Klinkhamer" />
-      <p>Hi, I’m Dayle. 
-        I’ve been passionate about technology since childhood—tinkering with game servers, troubleshooting issues for fun, 
-        and diving into anything that challenged me to think critically and of course became "Mr. Fix it" amongst family and friends in the process!
-        That curiosity naturally led me into software engineering, where I thrive on solving problems, learning new skills, and building tools that make life better.
-        Outside of coding, I’m a bit of a fitness nut, history enthusiast, documentary fan, and dedicated gamer.
-        I largely credit gaming with sharpening my logic, multitasking, communication, and adaptability—skills I now bring into every project I work on.
-
-</p>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-left">
+        <p class="eyebrow">Full‑Stack Developer • Dallas, TX</p>
+        <h1>Hi, I'm <span class="accent">Dayle</span> — I build clean, fast software that solves real problems.</h1>
+        <p class="lede">
+          4+ years shipping production code across retail systems, APIs, and tooling.
+          I love untangling legacy knots, automating the boring stuff, and turning ideas into
+          working apps and features.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">See my work</a>
+          <a class="btn" href="assets/Dayle_Klinkhamer_Resume.pdf" download>Download Résumé</a>
+          <a class="btn ghost" target="_blank" rel="noreferrer" href="https://github.com/ForgeMaster132">GitHub</a>
+		  <a class="btn ghost" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dayle-klinkhamer/">LinkedIn</a>
+        </div>
+        <div class="chips">
+          <span class="chip">Java • Spring Boot</span>
+          <span class="chip">React • Vite</span>
+          <span class="chip">APIs (REST/SOAP)</span>
+          <span class="chip">Docker • Jenkins</span>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="portrait-wrap">
+          <img src="assets/me.jpg" alt="Portrait of Dayle Klinkhamer" class="portrait" />
+          <div class="status">Open to Work</div>
+        </div>
+      </div>
     </section>
 
-    <div class="info-grid">
-      <section class="skills">
-  <h2>Skills</h2>
+    <section id="about" class="card section">
+      <h2 class="section-title">About</h2>
+      <p>
+        I'm a software developer that has been passionate about technology since childhood-tinkering with game servers, troubleshooting issues for fun, and diving into anything that challenged me to think critically and of course became "Mr. Fix it" amongst family and friends in the process! That curiosity naturally led me into software engineering, where I thrive on solving problems, learning new skills, and building tools that make life better. On the side, I enjoy working on personal projects, including games like <em>Clicker Kids</em>, a web‑based idle game. 
+      </p>
+      <p>
+        When I step away from the keyboard I'm a bit of fitness nut! You’ll find me training with my dog, working on calisthenics
+        skills, running, in the gym or learning something new.
+      </p>
+    </section>
 
-<h4>Programming Languages</h4>
-<p>Java, Python, JavaScript, PHP, SQL, Bash</p>
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-tilt>
+          <h3>Languages</h3>
+          <p>Java, JavaScript, Python, PHP, SQL, Bash</p>
+        </div>
+        <div class="skill-card" data-tilt>
+          <h3>Frameworks & Tools</h3>
+          <p>Spring Boot, JUnit/Mockito, Maven, Tomcat, React, Vite, Docker, Jenkins</p>
+        </div>
+        <div class="skill-card" data-tilt>
+          <h3>Tech</h3>
+          <p>REST & SOAP APIs, JSON, XML, Git, CI/CD, Fly.io, Vercel</p>
+        </div>
+        <div class="skill-card" data-tilt>
+          <h3>Databases</h3>
+          <p>DB2, MySQL</p>
+        </div>
+      </div>
+    </section>
 
-<h4>Frameworks & Libraries</h4>
-<p>Spring Boot, JUnit, Mockito, React, Node.js</p>
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card" data-tilt>
+          <div class="project-media">
+            <div class="floating-badge">LIVE</div>
+            <div class="anim-bars" aria-hidden="true"></div>
+          </div>
+          <div class="project-body">
+            <h3>Clicker Kids</h3>
+            <p>A browser-based idle/clicker built with React + Vite. Big-number math, save systems, juicy animations,
+              and performance tuning for smooth play on desktop & mobile.</p>
+            <div class="tags">
+              <span>React</span><span>Vite</span><span>Game Design</span><span>BreakInfinity</span>
+            </div>
+            <div class="project-cta">
+              <a class="btn small" target="_blank" rel="noreferrer" href="https://clickerkids.fun/">Play</a>
+            </div>
+          </div>
+        </article>
 
-<h4>Tools & DevOps</h4>
-<p>Apache Maven, Apache Tomcat, Jenkins, Docker, Git, Mercurial, Jira</p>
+        <article class="project-card" data-tilt>
+          <div class="project-media terminal">
+            <pre><code>$ curl -X POST /payments
+→ 200 OK
+Latency: 83ms</code></pre>
+          </div>
+          <div class="project-body">
+            <h3>Retail Payments Integrations</h3>
+            <p>Integrated third-party processors via REST/SOAP for multiple retail chains. Designed resilient
+               error-handling and observability to keep lanes moving.</p>
+            <div class="tags">
+              <span>Java</span><span>Spring</span><span>REST/SOAP</span><span>Observability</span>
+            </div>
+          </div>
+        </article>
 
-<h4>Web & API Technologies</h4>
-<p>REST & SOAP APIs, JSON, XML, HTML/CSS</p>
+        <article class="project-card" data-tilt>
+          <div class="project-media">
+            <div class="anim-dots"></div>
+          </div>
+          <div class="project-body">
+            <h3>Self-Checkout Overhaul</h3>
+            <p>Led refactor from legacy to modular design, improving throughput and reducing bug rates across stores.
+               Coordinated rollout, testing, and feedback loops.</p>
+            <div class="tags">
+              <span>Architecture</span><span>Leadership</span><span>CI/CD</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<h4>Databases</h4>
-<p>DB2, MySQL</p>
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
 
-<h4>Productivity & Office</h4>
-<p>Microsoft Office</p>
+      <div class="timeline">
+        <div class="time-item">
+          <div class="time-dot"></div>
+          <div class="time-content">
+            <h3>Java Developer — RedPanda Software (Flooid)</h3>
+            <span>Aug 2021 – Oct 2024 • South Africa</span>
+            <ul>
+              <li>Promoted rapidly from Junior to Intermediate demonstrating a strong ability to grow and learn.</li>
+              <li>Led self-checkout redesign and rollout across major retail clients.</li>
+              <li>Integrated third‑party payment systems (REST/SOAP).</li>
+              <li>Built internal tools that reduced repetitive QA by ~60%.</li>
 
-</section>
+            </ul>
+          </div>
+        </div>
 
-<section class="workExperience">
-  <h2>Professional Experience</h2>
+        <div class="time-item">
+          <div class="time-dot"></div>
+          <div class="time-content">
+            <h3>Coding Mentor — HyperionDev</h3>
+            <span>Jul 2020 – Jul 2021 • South Africa</span>
+            <ul>
+              <li>Mentored and graded 60+ students in full-stack development.</li>
+              <li>Delivered talks on engineering principles & best practices.</li>
+              <li>Improved student completion rates via personalized plans.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="job">
-    <h3>Java Developer</h3>
-    <p><strong>RedPanda Software</strong> (Flooid retail projects), South Africa</p>
-    <p><em>Aug 2021 – Oct 2024</em></p>
-    <ul>
-      <li>Maintained and enhanced retail solutions for clients including Calvin Klein, Tommy Hilfiger, Pick n Pay, and Woolworths.</li>
-      <li>Promoted from Junior to Intermediate Developer within one year.</li>
-      <li>Led a full redesign and rollout of the Self-Checkout system across multiple retail chains.</li>
-      <li>Integrated third-party payment systems via REST and SOAP APIs.</li>
-      <li>Created internal tools and automated processes to eliminate bottlenecks and improve productivity.</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <h3>Coding Mentor</h3>
-    <p><strong>HyperionDev</strong>, South Africa</p>
-    <p><em>Jul 2020 – Jul 2021</em></p>
-    <ul>
-      <li>Mentored and graded 60+ students in full-stack software development.</li>
-      <li>Delivered lectures on software engineering principles and best practices.</li>
-      <li>Developed personalized learning strategies, improving student completion rates.</li>
-      <li>Selected for the role due to top performance in HyperionDev's coding bootcamp.</li>
-    </ul>
-  </div>
-</section>
+    <section id="contact" class="section card">
+      <h2 class="section-title">Contact</h2>
+      <p class="lede">I’m open to full-time roles and interesting projects. The fastest way to reach me is email.</p>
+      <div class="contact-actions">
+        <a class="btn primary" href="mailto:dayleklinkhamer@gmail.com?subject=Hi%20Dayle%2C%20let%E2%80%99s%20talk">Email Me</a>
+        <a class="btn" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dayle-klinkhamer-1b24011a2">LinkedIn</a>
+        <a class="btn ghost" target="_blank" rel="noreferrer" href="https://github.com/ForgeMaster132">GitHub</a>
+      </div>
+    </section>
   </main>
-</body>
 
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Dayle Klinkhamer — Built with vanilla HTML/CSS/JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
