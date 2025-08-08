@@ -104,3 +104,19 @@ function tick(){
   requestAnimationFrame(tick);
 }
 tick();
+
+
+// Mobile menu toggle
+const menuBtn = document.getElementById("menuToggle");
+const nav = document.querySelector(".nav");
+if (menuBtn && nav){
+  menuBtn.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  // Close menu when clicking a link
+  nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+    nav.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded","false");
+  }));
+}
