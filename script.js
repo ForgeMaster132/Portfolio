@@ -66,7 +66,7 @@ function init(){
     items.push({
       x: rand(0,w), y: rand(0,h), r: rand(20,80)*dpr,
       vx: rand(-.15,.15)*dpr, vy: rand(-.1,.1)*dpr,
-      hue: rand(190,300)
+      hue: rand(100,150)
     });
   }
 }

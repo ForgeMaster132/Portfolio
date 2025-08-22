@@ -15,9 +15,9 @@ body {
   --panel-2: #0f172a;
   --text: #e5e7eb;
   --muted: #94a3b8;
-  --brand: #60a5fa;
-  --brand-2: #22d3ee;
-  --accent: #c084fc;
+  --brand: #10b981;
+  --brand-2: #22c55e;
+  --accent: #84cc16;
   --card: rgba(255,255,255,0.04);
   --glass: rgba(255,255,255,0.06);
   --border: rgba(255,255,255,0.12);
@@ -30,9 +30,9 @@ body {
   --panel-2: #f1f5f9;
   --text: #0f172a;
   --muted: #475569;
-  --brand: #2563eb;
-  --brand-2: #06b6d4;
-  --accent: #7c3aed;
+  --brand: #059669;
+  --brand-2: #16a34a;
+  --accent: #65a30d;
   --card: rgba(0,0,0,0.04);
   --glass: rgba(0,0,0,0.06);
   --border: rgba(0,0,0,0.1);
