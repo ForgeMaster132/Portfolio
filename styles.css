@@ -238,3 +238,34 @@ p { line-height: 1.75; color: var(--muted); }
 /* Desktop keeps subtle gradient header; add a fallback solid base to avoid banding */
 .site-header{ background: linear-gradient(to bottom, rgba(2,6,23,.8), rgba(2,6,23,0)); }
 
+
+
+/* === Inline Project Iframes === */
+.projects-grid.iframe-grid .project-media{ padding: 10px; background: var(--panel-2); }
+.frame-wrap{
+  width:100%;
+  aspect-ratio: 16/10;
+  border:1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  box-shadow: var(--shadow);
+}
+.frame-wrap iframe{ width:100%; height:100%; border:0; background: white; }
+.project-cta .btn.ghost{ background: linear-gradient(180deg, var(--panel-2), var(--panel)); }
+.section-subtitle{ margin: .5rem 0 1rem; color: var(--muted); font-weight: 700; }
+
+
+/* === Inline Project Iframes (cards) === */
+.project-card .project-media{ overflow: hidden; }
+.frame-wrap{
+  width:100%;
+  aspect-ratio: 16/10;
+  border:1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  box-shadow: var(--shadow);
+}
+.frame-wrap iframe{ width:100%; height:100%; border:0; background: white; }
+.project-cta .btn.ghost{ background: linear-gradient(180deg, var(--panel-2), var(--panel)); }
