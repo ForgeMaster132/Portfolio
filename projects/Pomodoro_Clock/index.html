@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Clock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="clock">
+      <h1 id="clock-name">Pomodoro Clock</h1>
+      <div class="settings">
+        <div class="setting-block" id="session">
+          <h2 id="set-session-heading">Session</h2>
+          <i class="control up-arrow" id="session-up-arrow">&#9650;</i>
+          <h1 class="set-number" id="session-set-number">25</h1>
+          <i class="control down-arrow" id="session-down-arrow">&#9660;</i>
+        </div>
+        <div class="setting-block" id="break">
+          <h2 id="set-break-heading">Break</h2>
+          <i class="control up-arrow" id="break-up-arrow">&#9650;</i>
+          <h1 class="set-number" id="break-set-number">5</h1>
+          <i class="control down-arrow" id="break-down-arrow">&#9660;</i>
+        </div>
+      </div>
+      <div id="display">
+        <div class="controls">
+          <img class="button" id="pause" src="Images/pause.png" alt="Pause" />
+          <img class="button" id="play" src="Images/play.png" alt="Play" />
+          <img class="button" id="refresh" src="Images/refresh.png" alt="Refresh" />
+          <img class="button" id="stop" src="Images/stop.png" alt="Stop" />
+        </div>
+        <h1 id="time">25:00</h1>
+        <h2 id="session-break">Session</h2>
+      </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
+
