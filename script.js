@@ -124,27 +124,38 @@ if (menuBtn && nav){
 
 // === Inline Project Iframes ===
 (function(){
+  function loadProjectFrame(wrap){
+    if(!wrap) return;
+
+    const src = wrap.getAttribute('data-src');
+    if(!src) return;
+
+    let iframe = wrap.querySelector('iframe');
+    if(!iframe){
+      iframe = document.createElement('iframe');
+      iframe.loading = 'lazy';
+      iframe.referrerPolicy = 'no-referrer';
+      wrap.appendChild(iframe);
+    }
+
+    iframe.src = src;
+    wrap.dataset.loaded = '1';
+  }
+
   const observer = new IntersectionObserver((entries)=>{
     for(const e of entries){
       if(e.isIntersecting){
         const wrap = e.target;
         if(wrap.dataset.loaded) continue;
-        const src = wrap.getAttribute('data-src');
-        if(!src) continue;
-        const iframe = document.createElement('iframe');
-        iframe.loading = 'lazy';
-        iframe.src = src;
-        iframe.referrerPolicy = 'no-referrer';
-        wrap.appendChild(iframe);
-        wrap.dataset.loaded = '1';
+        loadProjectFrame(wrap);
       }
     }
   }, {rootMargin: '200px 0px'});
   document.querySelectorAll('.frame-wrap[data-src]').forEach(el => observer.observe(el));
 
   window.reloadProjectFrame = function(btn){
-    const wrap = btn.closest('.project-card').querySelector('.frame-wrap');
-    const iframe = wrap && wrap.querySelector('iframe');
-    if(iframe){ iframe.contentWindow.location.reload(); }
+    const card = btn.closest('.project-card');
+    const wrap = card && card.querySelector('.frame-wrap');
+    loadProjectFrame(wrap);
   };
 })();
