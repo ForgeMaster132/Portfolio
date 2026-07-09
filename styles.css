@@ -269,3 +269,64 @@ p { line-height: 1.75; color: var(--muted); }
 }
 .frame-wrap iframe{ width:100%; height:100%; border:0; background: white; }
 .project-cta .btn.ghost{ background: linear-gradient(180deg, var(--panel-2), var(--panel)); }
+
+/* Stronger visual affordance for project launch links */
+.btn-action,
+.btn-featured {
+  position: relative;
+  font-weight: 800;
+  letter-spacing: .01em;
+  cursor: pointer;
+}
+
+.btn-action::after,
+.btn-featured::after {
+  content: "↗";
+  font-size: .9em;
+  opacity: .85;
+}
+
+.btn-action:hover,
+.btn-featured:hover,
+.btn-action:focus-visible,
+.btn-featured:focus-visible {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 16px 36px rgba(16,185,129,.28);
+  outline: 2px solid rgba(132,204,22,.65);
+  outline-offset: 3px;
+}
+
+.btn-featured {
+  padding: .85rem 1.15rem;
+  border: 0;
+  animation: clickablePulse 2.4s ease-in-out infinite;
+}
+
+@keyframes clickablePulse {
+  0%, 100% { box-shadow: 0 10px 30px rgba(0,0,0,.35), 0 0 0 0 rgba(34,197,94,.38); }
+  50% { box-shadow: 0 16px 36px rgba(16,185,129,.28), 0 0 0 8px rgba(34,197,94,0); }
+}
+
+.map-media {
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px),
+    linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
+    radial-gradient(340px 160px at 25% 20%, var(--brand), transparent),
+    radial-gradient(260px 160px at 80% 70%, var(--accent), transparent);
+  background-size: 42px 42px, 42px 42px, auto, auto;
+}
+
+.map-pin {
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(2,6,23,.55);
+  border: 1px solid rgba(255,255,255,.28);
+  color: #bbf7d0;
+  font-size: 2rem;
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
