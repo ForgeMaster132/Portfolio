@@ -75,6 +75,7 @@ p { line-height: 1.75; color: var(--muted); }
 .nav a { padding: .4rem .7rem; border-radius: 8px; opacity:.9 }
 .nav a:hover { background: var(--glass); }
 .nav .ghost { border: 1px solid var(--border); background: transparent; padding: .4rem .6rem; border-radius: 8px; cursor: pointer; }
+body:not(.light) #themeToggle { color: #ffffff; }
 
 /* Hero */
 .hero{
