@@ -319,6 +319,15 @@ p { line-height: 1.75; color: var(--muted); }
   box-shadow: 0 10px 24px rgba(8,47,73,.24);
 }
 
+.map-tool-link--grid {
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.055) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255,255,255,.055) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(56,189,248,.22), rgba(16,185,129,.22)),
+    var(--panel-2);
+  background-size: 18px 18px, 18px 18px, auto, auto;
+}
+
 .map-tool-link:hover {
   border-color: rgba(56,189,248,.68);
   box-shadow: 0 14px 28px rgba(8,47,73,.32);
